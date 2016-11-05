@@ -76,5 +76,19 @@ namespace WorkFlowWinForms
             WorkflowApplication wfApp = new WorkflowApplication(new StateActivity());
             wfApp.Run();
         }
+
+        private void btnStateLeaveWFStart_Click(object sender, EventArgs e)
+        {
+            workflowApplication = new WorkflowApplication(new StateLeaveActivity(), new Dictionary<string, object>()
+            {
+                {"inBookMarkName",this.txtBookMarkName.Text}
+            });
+
+            workflowApplication.Idle += AfterWorkflowIdel;
+            workflowApplication.OnUnhandledException += OnWorkflowExp;
+            workflowApplication.Unloaded = a => { Console.WriteLine("workflow unloaded"); };
+            workflowApplication.Aborted = a => { Console.WriteLine("workflow abort"); };
+            workflowApplication.Run();
+        }
     }
 }

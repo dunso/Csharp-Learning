@@ -33,6 +33,7 @@
             this.txtDays = new System.Windows.Forms.TextBox();
             this.txtBookMarkName = new System.Windows.Forms.TextBox();
             this.btnStateWorkflowStart = new System.Windows.Forms.Button();
+            this.btnStateLeaveWFStart = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnWorkFlowStart
@@ -81,11 +82,22 @@
             this.btnStateWorkflowStart.UseVisualStyleBackColor = true;
             this.btnStateWorkflowStart.Click += new System.EventHandler(this.btnStateWorkflowStart_Click);
             // 
+            // btnStateLeaveWFStart
+            // 
+            this.btnStateLeaveWFStart.Location = new System.Drawing.Point(12, 186);
+            this.btnStateLeaveWFStart.Name = "btnStateLeaveWFStart";
+            this.btnStateLeaveWFStart.Size = new System.Drawing.Size(117, 23);
+            this.btnStateLeaveWFStart.TabIndex = 5;
+            this.btnStateLeaveWFStart.Text = "StateLeaveWFStart";
+            this.btnStateLeaveWFStart.UseVisualStyleBackColor = true;
+            this.btnStateLeaveWFStart.Click += new System.EventHandler(this.btnStateLeaveWFStart_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 261);
+            this.Controls.Add(this.btnStateLeaveWFStart);
             this.Controls.Add(this.btnStateWorkflowStart);
             this.Controls.Add(this.txtDays);
             this.Controls.Add(this.btnContinue);
@@ -106,6 +118,7 @@
         private System.Windows.Forms.TextBox txtDays;
         private System.Windows.Forms.TextBox txtBookMarkName;
         private System.Windows.Forms.Button btnStateWorkflowStart;
+        private System.Windows.Forms.Button btnStateLeaveWFStart;
     }
 }
 
