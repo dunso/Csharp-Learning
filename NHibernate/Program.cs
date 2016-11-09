@@ -17,7 +17,15 @@ namespace NHibernate
 
             //create a session
             var session = sessionFactory.OpenSession();//相当于EF的上下文
+            var trans = session.BeginTransaction();
 
+            Student student = new Student();
+            student.SName = "dunso";
+            student.SubTime = DateTime.Now;
+            session.Save(student);
+            trans.Commit();
+            session.Close();
+            
         }
     }
 }
