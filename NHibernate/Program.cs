@@ -16,7 +16,7 @@ namespace NHibernate
             new Configuration().Configure().BuildSessionFactory();
 
             //create a session
-            var session = sessionFactory.OpenSession();//相当于EF的上下文
+            var session = sessionFactory.OpenSession();//the same to ef context
             var trans = session.BeginTransaction();
 
             Student student = new Student();

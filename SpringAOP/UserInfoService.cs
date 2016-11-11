@@ -6,7 +6,16 @@ using System.Threading.Tasks;
 
 namespace SpringAOP
 {
-    class UserInfoService
+    class UserInfoService : IUserInfoService
     {
+        public int add(int a, int b)
+        {
+            return a + b;
+        }
+
+        public int DoubleAdd(int b)
+        {
+            return b + b;
+        }
     }
 }

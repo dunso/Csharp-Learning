@@ -10,6 +10,10 @@ namespace SpringAOP
     {
         static void Main(string[] args)
         {
+            IUserInfoService userInfoService = new UserInfoService();
+            int result = userInfoService.add(3,4);
+            Console.WriteLine(result);
+            Console.ReadKey();
         }
     }
 }
