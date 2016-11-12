@@ -40,7 +40,6 @@ namespace WorkFlowWinForms
             Console.WriteLine("cretae bookmark");
             context.CreateBookmark(bookMarkName,new BookmarkCallback(CallBackFun));
 
-
             //int days = int.Parse(Console.ReadLine());
             //context.SetValue(outDays, days);
         }
