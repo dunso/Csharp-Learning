@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NHibernate", "NHibernate\NH
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpringAOP", "SpringAOP\SpringAOP.csproj", "{8074636E-EC46-4F27-8559-B88605199F05}"
 EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "EF.NetCore", "EF.NetCore\EF.NetCore.xproj", "{CD12C953-73A6-4577-AF83-C8A380594E16}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -49,6 +51,14 @@ Global
 		{8074636E-EC46-4F27-8559-B88605199F05}.Release|Any CPU.Build.0 = Release|Any CPU
 		{8074636E-EC46-4F27-8559-B88605199F05}.Release|x86.ActiveCfg = Release|Any CPU
 		{8074636E-EC46-4F27-8559-B88605199F05}.Release|x86.Build.0 = Release|Any CPU
+		{CD12C953-73A6-4577-AF83-C8A380594E16}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD12C953-73A6-4577-AF83-C8A380594E16}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD12C953-73A6-4577-AF83-C8A380594E16}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{CD12C953-73A6-4577-AF83-C8A380594E16}.Debug|x86.Build.0 = Debug|Any CPU
+		{CD12C953-73A6-4577-AF83-C8A380594E16}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD12C953-73A6-4577-AF83-C8A380594E16}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD12C953-73A6-4577-AF83-C8A380594E16}.Release|x86.ActiveCfg = Release|Any CPU
+		{CD12C953-73A6-4577-AF83-C8A380594E16}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
